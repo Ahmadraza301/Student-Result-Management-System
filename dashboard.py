@@ -13,13 +13,13 @@ from tkinter import messagebox
 class CMS:
     def __init__(self, root):
         self.root=root
-        self.root.title("Course Management system")
+        self.root.title("Student Result Management System")
         self.root.geometry("1350x700+0+0")
         self.root.config(bg="#ADEAEA")
         #=======icons=========
         self.logo_dash=ImageTk.PhotoImage(file="images/logo_p.png")
         #=======title=========
-        title=Label(self.root, text="Course Management System", padx=10, compound=LEFT, image=self.logo_dash, font=("goudy old style",20, "bold"),bg="#033054", fg="white").place(x=0, y=0, relwidth=1, height=50)
+        title=Label(self.root, text="Student Result Management System", padx=10, compound=LEFT, image=self.logo_dash, font=("goudy old style",20, "bold"),bg="#033054", fg="white").place(x=0, y=0, relwidth=1, height=50)
         #=========Menu=========
         M_Frame=LabelFrame(self.root, text="Menus", font=("times new roman", 15), bg="white")
         M_Frame.place(x=10, y=70, width=250, height=500)
@@ -59,7 +59,7 @@ class CMS:
         
         #Dtabasese Connections=============
         
-        footer=Label(self.root, text="Course Management system\nContact Us for any Technical Issue: 9876543210", font=("goudy old style",12),bg="#262626", fg="white").pack(side=BOTTOM, fill=X)
+        footer=Label(self.root, text="Student Result Management System\nContact Us for any Technical Issue: 9876543210", font=("goudy old style",12),bg="#262626", fg="white").pack(side=BOTTOM, fill=X)
         self.update_details()
     def update_details(self):
         con=sqlite3.connect(database="rms.db")

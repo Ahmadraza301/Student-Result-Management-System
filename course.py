@@ -6,7 +6,7 @@ import sqlite3
 class courseclass:
     def __init__(self, root):
         self.root=root
-        self.root.title("Course Management System")
+        self.root.title("Student Result Management System")
         self.root.geometry("1200x480+80+170")
         self.root.config(bg="#ADEAEA")
         self.root.focus_force()
